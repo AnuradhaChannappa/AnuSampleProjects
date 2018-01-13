@@ -1,0 +1,11 @@
+Search for suggestions
+As a user I don't know what facilities are available on Health Direct
+I want to be able to look up the available facilities
+I should be able to get suggestions for valid search
+And no suggestions for invalid suggestions
+The suggestions containing searched keyword should be highlighted bold
+I should be able to click on one of the suggestions
+The search results should list details for the keyword searched
+
+
+

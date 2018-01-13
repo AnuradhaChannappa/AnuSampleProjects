@@ -1,0 +1,14 @@
+I go to Cafe TownSend login page
+I enter user name and password
+Then i click on the login button
+Then i verify whether the correct user is logged in through Hello Username
+Then i verify the button labels for Create,Edit and Delete
+Also, i  check whether the Edit and Delete buttons are disabled initially
+The create button should be enabled
+I check the links on the footer for correct name and on each link selection, I am taken to a respective page and i come back.
+
+
+Observations:
+
+Some page urls are https and some are http..on address bar it wont show
+navavigate back not working so stored previous page url and coming back

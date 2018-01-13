@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.tigerspike.homepage.test.cucumber.DefinitionTestSuite
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 126.68 s - in com.tigerspike.homepage.test.cucumber.DefinitionTestSuite

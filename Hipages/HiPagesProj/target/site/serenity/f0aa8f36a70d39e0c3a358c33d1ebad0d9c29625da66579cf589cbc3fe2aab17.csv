@@ -1,0 +1,4 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Testing different requests on the Twitter application","Check if the twitter search endpoint works","SUCCESS","2018-01-08T12:33:09.827+11:00","0.0","4.91"
+"Testing different requests on the Twitter application","Check if the twitter timeline endpoint works","SUCCESS","2018-01-08T12:33:19.850+11:00","0.0","1.96"
+"Testing different requests on the Twitter application","List all the tweets for hipages","SUCCESS","2018-01-08T12:33:14.965+11:00","0.0","4.66"

@@ -1,0 +1,5 @@
+"Story","Title","Result","Date","Stability","Duration (s)"
+"Health Direct home page search feature test scenarios","Test for successful serach","SUCCESS","2018-01-13T14:06:36.367+11:00[Australia/Sydney]","0.0","14.51"
+"Health Direct home page search feature test scenarios","Test the serach word to be bold","SUCCESS","2018-01-13T14:06:52.091+11:00[Australia/Sydney]","0.0","13.28"
+"Health Direct home page search feature test scenarios","Test for invalid serach","SUCCESS","2018-01-13T14:07:05.429+11:00[Australia/Sydney]","0.0","20.91"
+"Health Direct home page search feature test scenarios","Test for placeholder text and tool tip","SUCCESS","2018-01-13T14:07:48.285+11:00[Australia/Sydney]","0.0","10.52"

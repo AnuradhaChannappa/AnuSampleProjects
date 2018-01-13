@@ -1,0 +1,29 @@
+<acceptance-test-run title="Search for a category" name="Search for a category" description="" steps="4" successful="4" failures="0" skipped="0" ignored="0" pending="0" result="SUCCESS" duration="124875" timestamp="2018-01-13T13:32:49.422+11:00">
+  <user-story id="tigerspike-ebay-add-items" name="TigerSpike Ebay add items" path="EBay_HomePage/SearchAddItems.feature"/>
+  <tags>
+    <tag name="TigerSpike Ebay add items" type="feature"/>
+    <tag name="E bay  home page/Search add items" type="story"/>
+    <tag name="EbayAddItems" type="tag"/>
+    <tag name="SearchCategory" type="tag"/>
+  </tags>
+  <test-group name="Given the user is on the Ebay home page" result="SUCCESS">
+    <test-step result="SUCCESS" duration="16686">
+      <description>I navigate to Ebay home page</description>
+    </test-step>
+  </test-group>
+  <test-group name="When the user selects category &apos;cycling&apos;" result="SUCCESS">
+    <test-step result="SUCCESS" duration="20162">
+      <description>I select category &lt;span class=&apos;step-parameter&apos;&gt;cycling&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+  <test-group name="And the user shop by sub category &apos;Bicycles&apos;" result="SUCCESS">
+    <test-step result="SUCCESS" duration="1846">
+      <description>I select sub category &lt;span class=&apos;step-parameter&apos;&gt;Bicycles&lt;/span&gt;</description>
+    </test-step>
+  </test-group>
+  <test-group name="And the user selects brand and items" result="SUCCESS">
+    <test-step result="SUCCESS" duration="84703">
+      <description>I select top 5 brands and one item from each brand</description>
+    </test-step>
+  </test-group>
+</acceptance-test-run>

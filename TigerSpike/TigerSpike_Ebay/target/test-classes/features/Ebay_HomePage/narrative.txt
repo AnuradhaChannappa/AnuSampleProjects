@@ -1,0 +1,12 @@
+Search for suggestions
+
+As a user I want to purchase items online
+I want to be able to look up the available categories
+I should be able to get brand suggestions for cartegory searched
+And I should be able to select a brand
+The selected brand should list me items
+I should be able to click on items and add them
+Then i should proceed to payment page
+
+
+

@@ -1,0 +1,1 @@
+clean install -Dcucumber.options="--tags @SearchValid" -DBrowser=Chrome

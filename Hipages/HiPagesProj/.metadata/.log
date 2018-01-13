@@ -1,0 +1,422 @@
+!SESSION 2018-01-03 15:30:54.209 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_AU
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/anuradha.channappa/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/anuradha.channappa/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 4 0 2018-01-04 13:14:12.311
+!MESSAGE The proxied handler for 'org.agileware.natural.cucumber.ui.CucumberExecutableExtensionFactory:org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler' could not be loaded
+!STACK 1
+org.eclipse.core.runtime.CoreException: Guice configuration errors:
+
+1) No implementation for org.eclipse.xtext.ui.refactoring.IReferenceUpdater was bound.
+  while locating org.eclipse.xtext.ui.refactoring.IReferenceUpdater
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultLinkedPositionGroupCalculator.referenceUpdater(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ILinkedPositionGroupCalculator
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.linkedPositionGroupCalculator(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2) No implementation for org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory was bound.
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.renameSupportFactory(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2 errors ExtensionFactory: org.agileware.natural.cucumber.ui.CucumberExecutableExtensionFactory
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:59)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:350)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:231)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:127)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:80)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:862)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.canExecute(HandlerServiceImpl.java:179)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:220)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:255)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:112)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:92)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:471)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1506)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5851)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4158)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3691)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+Caused by: com.google.inject.ConfigurationException: Guice configuration errors:
+
+1) No implementation for org.eclipse.xtext.ui.refactoring.IReferenceUpdater was bound.
+  while locating org.eclipse.xtext.ui.refactoring.IReferenceUpdater
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultLinkedPositionGroupCalculator.referenceUpdater(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ILinkedPositionGroupCalculator
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.linkedPositionGroupCalculator(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2) No implementation for org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory was bound.
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.renameSupportFactory(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2 errors
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:1004)
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:961)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1013)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:52)
+	... 56 more
+!SUBENTRY 1 org.agileware.natural.cucumber.ui 4 0 2018-01-04 13:14:12.315
+!MESSAGE Guice configuration errors:
+
+1) No implementation for org.eclipse.xtext.ui.refactoring.IReferenceUpdater was bound.
+  while locating org.eclipse.xtext.ui.refactoring.IReferenceUpdater
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultLinkedPositionGroupCalculator.referenceUpdater(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ILinkedPositionGroupCalculator
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.linkedPositionGroupCalculator(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2) No implementation for org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory was bound.
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.renameSupportFactory(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2 errors ExtensionFactory: org.agileware.natural.cucumber.ui.CucumberExecutableExtensionFactory
+!STACK 0
+com.google.inject.ConfigurationException: Guice configuration errors:
+
+1) No implementation for org.eclipse.xtext.ui.refactoring.IReferenceUpdater was bound.
+  while locating org.eclipse.xtext.ui.refactoring.IReferenceUpdater
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultLinkedPositionGroupCalculator.referenceUpdater(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ILinkedPositionGroupCalculator
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.linkedPositionGroupCalculator(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2) No implementation for org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory was bound.
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.renameSupportFactory(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2 errors
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:1004)
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:961)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1013)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:52)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:350)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:231)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:127)
+	at sun.reflect.GeneratedMethodAccessor7.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:80)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:862)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.canExecute(HandlerServiceImpl.java:179)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:220)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:255)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:112)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:92)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:471)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1506)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5851)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4158)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3691)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+!SESSION 2018-01-05 16:18:42.209 -----------------------------------------------
+eclipse.buildId=4.7.0.I20170612-0950
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_AU
+Framework arguments:  -product org.eclipse.epp.package.jee.product -keyring /Users/anuradha.channappa/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.jee.product -keyring /Users/anuradha.channappa/.eclipse_keyring
+
+!ENTRY org.eclipse.ui 4 0 2018-01-05 16:21:08.765
+!MESSAGE The proxied handler for 'org.agileware.natural.cucumber.ui.CucumberExecutableExtensionFactory:org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler' could not be loaded
+!STACK 1
+org.eclipse.core.runtime.CoreException: Guice configuration errors:
+
+1) No implementation for org.eclipse.xtext.ui.refactoring.IReferenceUpdater was bound.
+  while locating org.eclipse.xtext.ui.refactoring.IReferenceUpdater
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultLinkedPositionGroupCalculator.referenceUpdater(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ILinkedPositionGroupCalculator
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.linkedPositionGroupCalculator(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2) No implementation for org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory was bound.
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.renameSupportFactory(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2 errors ExtensionFactory: org.agileware.natural.cucumber.ui.CucumberExecutableExtensionFactory
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:59)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:350)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:231)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:127)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:80)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:862)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.canExecute(HandlerServiceImpl.java:179)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:220)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:255)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:112)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:92)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:471)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1506)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5851)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4158)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3691)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)
+Caused by: com.google.inject.ConfigurationException: Guice configuration errors:
+
+1) No implementation for org.eclipse.xtext.ui.refactoring.IReferenceUpdater was bound.
+  while locating org.eclipse.xtext.ui.refactoring.IReferenceUpdater
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultLinkedPositionGroupCalculator.referenceUpdater(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ILinkedPositionGroupCalculator
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.linkedPositionGroupCalculator(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2) No implementation for org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory was bound.
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.renameSupportFactory(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2 errors
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:1004)
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:961)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1013)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:52)
+	... 56 more
+!SUBENTRY 1 org.agileware.natural.cucumber.ui 4 0 2018-01-05 16:21:08.767
+!MESSAGE Guice configuration errors:
+
+1) No implementation for org.eclipse.xtext.ui.refactoring.IReferenceUpdater was bound.
+  while locating org.eclipse.xtext.ui.refactoring.IReferenceUpdater
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultLinkedPositionGroupCalculator.referenceUpdater(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ILinkedPositionGroupCalculator
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.linkedPositionGroupCalculator(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2) No implementation for org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory was bound.
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.renameSupportFactory(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2 errors ExtensionFactory: org.agileware.natural.cucumber.ui.CucumberExecutableExtensionFactory
+!STACK 0
+com.google.inject.ConfigurationException: Guice configuration errors:
+
+1) No implementation for org.eclipse.xtext.ui.refactoring.IReferenceUpdater was bound.
+  while locating org.eclipse.xtext.ui.refactoring.IReferenceUpdater
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultLinkedPositionGroupCalculator.referenceUpdater(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ILinkedPositionGroupCalculator
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.linkedPositionGroupCalculator(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2) No implementation for org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory was bound.
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameSupport$Factory
+    for field at org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController.renameSupportFactory(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.RenameRefactoringController
+    for field at org.eclipse.xtext.ui.refactoring.ui.DefaultRenameElementHandler.renameRefactoringController(Unknown Source)
+  while locating org.eclipse.xtext.ui.refactoring.ui.IRenameElementHandler
+
+2 errors
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:1004)
+	at com.google.inject.internal.InjectorImpl.getProvider(InjectorImpl.java:961)
+	at com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1013)
+	at org.eclipse.xtext.ui.guice.AbstractGuiceAwareExecutableExtensionFactory.create(AbstractGuiceAwareExecutableExtensionFactory.java:52)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:262)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.loadHandler(HandlerProxy.java:350)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.setEnabled(HandlerProxy.java:231)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.setEnabled(E4HandlerProxy.java:127)
+	at sun.reflect.GeneratedMethodAccessor2.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:305)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:239)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.setEnabled(HandlerServiceHandler.java:80)
+	at org.eclipse.core.commands.Command.setEnabled(Command.java:862)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.canExecute(HandlerServiceImpl.java:179)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:220)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:255)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:112)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:92)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:471)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:86)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4257)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1502)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1525)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1506)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5851)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4158)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3691)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1044)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:680)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:594)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:151)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:653)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:590)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1499)

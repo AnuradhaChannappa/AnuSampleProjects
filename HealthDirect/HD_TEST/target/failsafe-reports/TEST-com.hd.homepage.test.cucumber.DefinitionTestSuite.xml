@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.hd.homepage.test.cucumber.DefinitionTestSuite" time="83.347" tests="22" errors="2" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="cucumber.options" value="--tags @HealthDirectFeature"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib"/>
+    <property name="java.vm.version" value="25.144-b01"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/anuradha.channappa/Desktop/AnuSampleProjects/HealthDirect/HD_TEST"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="AU"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/Users/anuradha.channappa/Desktop/AnuSampleProjects/HealthDirect/HD_TEST"/>
+    <property name="java.runtime.version" value="1.8.0_144-b01"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/endorsed"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.io.tmpdir" value="/var/folders/7j/vbgtkd3935xdgks4tc5rzmk80000gn/T/"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="classworlds.conf" value="/Users/anuradha.channappa/Documents/AnuSampleProjects/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf1677603869918113899.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/anuradha.channappa/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.12.6"/>
+    <property name="user.home" value="/Users/anuradha.channappa"/>
+    <property name="user.timezone" value="Australia/Sydney"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="anuradha.channappa"/>
+    <property name="java.class.path" value="/Users/anuradha.channappa/eclipse/jee-oxygen/Eclipse.app/Contents/Eclipse/../../../../../.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.8.0.20170516-2042/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B clean install -Dcucumber.options=--tags @HealthDirectFeature -DBrowser=Chrome"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_144"/>
+    <property name="java.ext.dirs" value="/Users/anuradha.channappa/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/Users/anuradha.channappa/Desktop/AnuSampleProjects/HealthDirect/HD_TEST/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="Browser" value="Chrome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="Given the user is on the Health Direct home page" classname="Scenario: Test for successful serach" time="0.001"/>
+  <testcase name="When the user looks up the suggestion for &apos;asthma&apos;" classname="Scenario: Test for successful serach" time="0"/>
+  <testcase name="Then they should see the suggestion &apos;asthma&apos;" classname="Scenario: Test for successful serach" time="0"/>
+  <testcase name="Scenario: Test for successful serach" classname="Scenario: Test for successful serach" time="1.214"/>
+  <testcase name="Given the user is on the Health Direct home page" classname="Scenario: Test the serach word to be bold" time="0"/>
+  <testcase name="When the user looks up the suggestion for &apos;asthma&apos;" classname="Scenario: Test the serach word to be bold" time="0"/>
+  <testcase name="Then they should see the suggestions with &apos;asthma&apos; as bold" classname="Scenario: Test the serach word to be bold" time="0"/>
+  <testcase name="Scenario: Test the serach word to be bold" classname="Scenario: Test the serach word to be bold" time="0.059"/>
+  <testcase name="Given the user is on the Health Direct home page" classname="Scenario: Test for invalid serach" time="0"/>
+  <testcase name="When the user looks up the suggestion for &apos;xyz&apos;" classname="Scenario: Test for invalid serach" time="0"/>
+  <testcase name="Then they should not see any suggestions" classname="Scenario: Test for invalid serach" time="0"/>
+  <testcase name="Scenario: Test for invalid serach" classname="Scenario: Test for invalid serach" time="0.04"/>
+  <testcase name="Given the user is on the Health Direct home page" classname="Scenario: Test for valid suggestion select" time="0"/>
+  <testcase name="When the user looks up the suggestion for &apos;asthma&apos;" classname="Scenario: Test for valid suggestion select" time="0"/>
+  <testcase name="And they see the suggestion &apos;asthma&apos;" classname="Scenario: Test for valid suggestion select" time="0"/>
+  <testcase name="And they click on &apos;anti-asthmatic agents&apos; option" classname="Scenario: Test for valid suggestion select" time="0"/>
+  <testcase name="Then verify the search result page" classname="Scenario: Test for valid suggestion select" time="0.005">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;main.main_content-article-text h1&quot;}&#10;  (Session info: chrome=63.0.3239.132)&#10;  (Driver info: chromedriver=2.34.522932 (4140ab217e1ca1bec0c4b4d1b148f3361eb3a03e),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 20.05 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;HAMACLT0082&apos;, ip: &apos;fe80:0:0:0:18c3:930b:6e49:99ac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522932 (4140ab217e1ca1bec0c4b4d1b148f3361eb3a03e), userDataDir=/var/folders/7j/vbgtkd3935xdgks4tc5rzmk80000gn/T/.org.chromium.Chromium.ZB6Jwg}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]&#10;Session ID: 31f03fd4ed4e6632dc40f190564f6449&#10;*** Element info: {Using=css selector, value=main.main_content-article-text h1}" type="net.serenitybdd.core.exceptions.SerenityManagedException">net.serenitybdd.core.exceptions.SerenityManagedException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"main.main_content-article-text h1"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522932 (4140ab217e1ca1bec0c4b4d1b148f3361eb3a03e),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'HAMACLT0082', ip: 'fe80:0:0:0:18c3:930b:6e49:99ac%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522932 (4140ab217e1ca1bec0c4b4d1b148f3361eb3a03e), userDataDir=/var/folders/7j/vbgtkd3935xdgks4tc5rzmk80000gn/T/.org.chromium.Chromium.ZB6Jwg}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 31f03fd4ed4e6632dc40f190564f6449
+*** Element info: {Using=css selector, value=main.main_content-article-text h1}
+</error>
+  </testcase>
+  <testcase name="Scenario: Test for valid suggestion select" classname="Scenario: Test for valid suggestion select" time="0.005">
+    <error message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;main.main_content-article-text h1&quot;}&#10;  (Session info: chrome=63.0.3239.132)&#10;  (Driver info: chromedriver=2.34.522932 (4140ab217e1ca1bec0c4b4d1b148f3361eb3a03e),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 20.05 seconds&#10;For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: &apos;3.4.0&apos;, revision: &apos;unknown&apos;, time: &apos;unknown&apos;&#10;System info: host: &apos;HAMACLT0082&apos;, ip: &apos;fe80:0:0:0:18c3:930b:6e49:99ac%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;1.8.0_144&apos;&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522932 (4140ab217e1ca1bec0c4b4d1b148f3361eb3a03e), userDataDir=/var/folders/7j/vbgtkd3935xdgks4tc5rzmk80000gn/T/.org.chromium.Chromium.ZB6Jwg}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]&#10;Session ID: 31f03fd4ed4e6632dc40f190564f6449&#10;*** Element info: {Using=css selector, value=main.main_content-article-text h1}" type="net.serenitybdd.core.exceptions.SerenityManagedException">net.serenitybdd.core.exceptions.SerenityManagedException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"main.main_content-article-text h1"}
+  (Session info: chrome=63.0.3239.132)
+  (Driver info: chromedriver=2.34.522932 (4140ab217e1ca1bec0c4b4d1b148f3361eb3a03e),platform=Mac OS X 10.12.6 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 20.05 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'HAMACLT0082', ip: 'fe80:0:0:0:18c3:930b:6e49:99ac%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.12.6', java.version: '1.8.0_144'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.34.522932 (4140ab217e1ca1bec0c4b4d1b148f3361eb3a03e), userDataDir=/var/folders/7j/vbgtkd3935xdgks4tc5rzmk80000gn/T/.org.chromium.Chromium.ZB6Jwg}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=63.0.3239.132, platform=MAC, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 31f03fd4ed4e6632dc40f190564f6449
+*** Element info: {Using=css selector, value=main.main_content-article-text h1}
+</error>
+  </testcase>
+  <testcase name="Given the user is on the Health Direct home page" classname="Scenario: Test for placeholder text and tool tip" time="0"/>
+  <testcase name="When the user mouse over the search field" classname="Scenario: Test for placeholder text and tool tip" time="0"/>
+  <testcase name="Then verify placeholder and tooltip" classname="Scenario: Test for placeholder text and tool tip" time="0"/>
+  <testcase name="Scenario: Test for placeholder text and tool tip" classname="Scenario: Test for placeholder text and tool tip" time="0.046"/>
+</testsuite>
